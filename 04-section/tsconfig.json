@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "rootDir": "src",
+    "outDir": "dist",
+    "removeComments": true,
+    "noEmitOnError": true,
+    "pretty": true,
+    "moduleDetection": "force",
+
+    // Style Options
+    // "noImplicitAny": true, // issues error if Ts inferred a type as any
+    // "strictNullChecks": true, // doesnt allow access when un-initialized. doesn't skips type check for null/undefined during initialiation
+    // "strict": true, // auto sets true for both above flags. true by default from v6, thus no need
+
+  },
+  "include": ["src/**/*.ts"], // runs first
+  "exclude": ["src/__tests__/**/*"] // runs second and filters. here we can use this alone which mean src auto included
+}
