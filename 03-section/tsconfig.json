@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es2015", // convert Ts to this version of Js
+        "noEmitOnError": true, // dont emit Js file in case of error
+        "removeComments": true, // remove comments when converted to Js
+        "rootDir": "src", // start here to check for Ts files. if found at any other place it complains
+        "outDir": "dist", // keep all generated Js here
+        "pretty": true, // colorize errors in terminal
+        "moduleDetection": "force", // treates each file as isolated modules
+    }
+}
